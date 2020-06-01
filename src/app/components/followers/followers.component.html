@@ -1,0 +1,19 @@
+<div class="followers">
+    <div
+        *ngFor="let follower of followers"
+        class="follower-card">
+        <h2>
+            <a
+                href="">
+                {{ follower.login }}
+            </a>
+        </h2>
+        <h3>
+            <a
+                [href]="follower.url"
+                target="_blank">
+                {{ follower.url }}
+            </a>
+        </h3>
+    </div>
+</div>
